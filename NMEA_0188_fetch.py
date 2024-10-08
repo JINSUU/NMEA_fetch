@@ -22,10 +22,10 @@ local_tzinfo = local_time.tzinfo
 # https://receiverhelp.trimble.com/alloy-gnss/en-us/nmea0183-messages-overview.html
 
 while True:
-    response = ser.readline()  # 한 줄씩 읽기 (바이트로)
+    response = ser.readline()
     if response:
         try:
-            NMEA = response.decode().strip()  # 바이트 문자열을 유니코드 문자열로 변환하고 공백 제거
+            NMEA = response.decode().strip()
 
             if NMEA.startswith(NMEA_START) and CHECKSUM_PREFIX in NMEA:
 
