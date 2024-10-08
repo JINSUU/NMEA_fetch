@@ -60,14 +60,14 @@ while True:
                          Longitude, Direction_of_longitude, UTC_of_position,
                          Status, *GLL_extra) = data
                         
-                        print("Message ID:", Message_ID)
-                        print("Latitude:", Latitude)
-                        print("Direction of Latitude:", Direction_of_latitude)
-                        print("Longitude:", Longitude)
-                        print("Direction of Longitude:", Direction_of_longitude)
-                        print("UTC of Position:", UTC_of_position)
-                        print("Status:", Status)
-                        print("GLL Extra:", GLL_extra)
+                        # print("Message ID:", Message_ID)
+                        # print("Latitude:", Latitude)
+                        # print("Direction of Latitude:", Direction_of_latitude)
+                        # print("Longitude:", Longitude)
+                        # print("Direction of Longitude:", Direction_of_longitude)
+                        # print("UTC of Position:", UTC_of_position)
+                        # print("Status:", Status)
+                        # print("GLL Extra:", GLL_extra)
 
                     case 'RMC':  # Position, velocity, and time
 
@@ -164,7 +164,7 @@ while True:
                     case _:  # Undefined Type
                         print(f"Unknown sentence type: {Message_Type}")
 
-                # print(data)
+                print(data)
 
         except Exception as e:
             Error_Msg = traceback.format_exc()
