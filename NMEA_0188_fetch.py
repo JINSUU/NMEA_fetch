@@ -9,7 +9,7 @@ ser = serial.Serial(port, 9600, timeout=1)
 
 time.sleep(2)  # wait after initiating
 
-NMEA_START = '$GP'
+NMEA_START = '$G'
 DTS_set = ['GGA', 'GLL', 'GSA', 'GSV', 'RMC', 'VTG', 'ZDA', 'GSV']
 CHECKSUM_PREFIX = '*'
 
